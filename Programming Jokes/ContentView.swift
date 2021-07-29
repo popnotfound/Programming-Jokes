@@ -24,12 +24,10 @@ struct ContentView: View {
         .onAppear(perform: {
             getJokes()
         })
-        
     }
+    
     func getJokes() {
-        jokes.append(joke(setup: "Why do programmers always get Christmas and Halloween mixed up?",punchline: "Because DEC 25 = OCT 31"))
-        jokes.append(joke(setup: "How did the programmer die in the shower?", punchline: "She followed the shampoo bottle instructions: Lather. Rinse. Repeat."))
-        jokes.append(joke(setup: "There are 10 types of people in the world", punchline: "Those who understand binary and those who don’t."))
+        let apiKey = "?rapidapi-key = 4889f9e3f9msh837983776489b8cp12d1ddjsn0fb79206ee5b"
     }
 }
 
